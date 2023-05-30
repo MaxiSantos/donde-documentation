@@ -30,12 +30,13 @@ Port 443
 
 You will need to do this in both user and admin repositories
 
-1. clone common, user and admin repository
-2. switch to `development` branches in each repo
-3. go to root project folder (user and admin) and create symlink to public folder
+1. clone common, documentation, user and admin repository
+2. switch to `development` branches in each repo and create a custom branch for you.
+3. go to root project folder (user and admin) and create symlink to public folder and docs
 
 ```bach
   mklink /D public ..\donde-frontend-common\public
+  mklink /D docs ..\donde-documentation\docs
 ```
 
 4. go to app folder (user and admin) and create symlink to common folder
