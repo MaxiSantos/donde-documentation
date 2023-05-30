@@ -35,7 +35,7 @@ The project is divided in 4 github repositories.
 - staging: for testing
 
   - frontend: test.dondelobusco.com
-  - backend: test.api.dondelobusoc.com
+  - backend: api.test.dondelobusco.com
 
 - development: for local development
 
