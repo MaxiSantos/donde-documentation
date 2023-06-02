@@ -1,28 +1,11 @@
 ## dondelobusco
 
-> A magical documentation site generator.
+> a platform to connect buyers with sellers in real time
 
-## What it is
+## Motivation
 
-Docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an `index.html` and [deploy it on GitHub Pages](deploy.md).
+I'm a software developer that always worked for projects that have been already started. I wanted to have the opportunity to build an entire site from the beggining and I also found a problem every time I went to stores to find something I want: the more specific the product you want to buy the more likely those stores wont have it, hence you have to go to the next store.
 
-See the [Quick start](quickstart.md) guide for more details.
+## What it is?
 
-## Features
-
-- No statically built html files
-- Simple and lightweight
-- Smart full-text search plugin
-- Multiple themes
-- Useful plugin API
-- Emoji support
-- Compatible with IE11
-- Support server-side rendering ([example](https://github.com/docsifyjs/docsify-ssr-demo))
-
-## Examples
-
-Check out the [Showcase](https://github.com/docsifyjs/awesome-docsify#showcase) to see docsify in use.
-
-## Community
-
-Users and the development team are usually in the [Discord server](https://discord.gg/3NwKFyR).
+dondelobusco is a web service that pretends to help people, that are currently buying something, to find their products faster by sending their request to all stores in real time. At the same time it allows store admin to receive those queries and respond to them in real time with a dashboard that also has CRUD operations to build their own stores with products in this platform.
