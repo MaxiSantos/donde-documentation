@@ -2,13 +2,15 @@
 
 ![logo](_media/logo.png ":size=100")
 
-# dondelobusco <small>3.5</small>
+# dondelobusco <small>0.1</small>
 
-> A magical documentation site generator.
+> a platform to connect buyers with sellers in real time
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- real time with websockets 🤩
+- mobile friendly 📱
+- production and staging environment 🧷
+- 5 repositories 🤯
+- nextjs, apollo-client, apollo-server, graphql, prisma 😍
 
 [GitHub](https://github.com/MaxiSantos/donde-documentation/)
 [Get Started](#dondelobusco)

@@ -12,7 +12,7 @@
 - Backend
 
   - node (express)
-  - apollo
+  - apollo-server
   - prisma (db: postgress)
   - typegraphql
 
@@ -32,6 +32,10 @@
 - node (**prefered** to install it with nvm) v14.21.x
 - yarn v1.22.19
 - postgres: if working with backend then go to https://www.postgresql.org/download/ v12.15.1
+- docsify (https://github.com/docsifyjs/docsify-cli
+  `npm i docsify-cli -g`
+
+  > use npm if yarn dont allow you to use it from terminal
 
 #### Optional
 

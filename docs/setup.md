@@ -138,3 +138,6 @@ You should create a symlink of documentation repository under each project so yo
 ```bach
   mklink /D ./path_to_destiny_project/docs ./path_to_documentation_repo./docs
 ```
+
+3. go to docs folder and run
+   `docsify serve -- port 3020`
