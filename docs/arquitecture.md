@@ -39,4 +39,4 @@ The project is divided in 4 github repositories.
 
 - development: for local development
 
-All branches are protected and need pull-request approval to be merged. In case of critical bug to fix in production we will use `hot-fix` branch. All other branches should follow this convention `feat/feature_name` or `bug/short_bug_name`
+All branches are protected and need pull-request approval to be merged. In case of critical bug to fix in production we will use `hot-fix` branch. All other branches should follow this convention `feat/feature_name`, `bug/short_bug_name` or your name
