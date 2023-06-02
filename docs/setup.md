@@ -34,14 +34,14 @@ You will need to do this in both user and admin repositories
 2. switch to `development` branches in each repo and create a custom branch for you.
 3. go to root project folder (user and admin) and create symlink to public folder and docs
 
-```bach
+```bash
   mklink /D public ..\donde-frontend-common\public
   mklink /D docs ..\donde-documentation\docs
 ```
 
 4. go to app folder (user and admin) and create symlink to common folder
 
-```bach
+```bash
   mklink /D common ..\..\donde-frontend-common\common
 ```
 
@@ -68,13 +68,64 @@ NEXT_PUBLIC_WS_ENDPOINT='wss://api.test.dondelobusco.com'
 
 > In case you have problems running this command in vscode powershell then do this: https://www.youtube.com/watch?v=gm0gexHWDy0
 
+8. Go to http://localhost:3000
+
+- user site
+  - user: user regular 1
+  - password: password1234.
+- admin site
+  - user: user govinda
+  - password: password1234.
+
 ## Backend
 
-You need to prepare database and then install backend
+1. clone backend and documentation repo
+2. switch to `development` branch in backend repo and create a custom branch for you
+3. go to root project folder and create symlink for docs folder
 
-### Database
+```bash
+  mklink /D docs ..\donde-documentation\docs
+```
 
-### Backend
+4. create `.env` file from `sample.env`
+
+5. create a local server for database (prefered to use pgadmin and connection data from `DATABASE_URL` in `.env` file)
+   a. host: localhost
+   b. username: postgres
+   c. port: 5432
+   d. maintenance database: postgres
+
+6. install dependencies with `yarn install`
+7. create database
+
+   1. You first need to create the database: dondelobusco
+   2. Then apply prisma command to create tables and relations based on schema
+      https://www.prisma.io/docs/concepts/components/prisma-migrate/db-push#choosing-db-push-or-prisma-migrate
+
+   ```bash
+     prisma db push or yarn run prisma db push
+   ```
+
+   > `prisma migrate or prisma db push` says database name will be created if not found but its not true so you must create the database (7.a)
+
+   3. seed data with
+
+   ```bash
+   yarn run prisma:db-seed
+   ```
+
+8. start server
+   `yarn run dev`
+
+9. go to http://localhost:8000/graphql and test this graphql query
+
+```graphql
+query ExampleQuery {
+  stores {
+    name
+  }
+}
+```
 
 ## Documentation
 
