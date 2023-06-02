@@ -26,20 +26,20 @@
 
 ##### Backend
 
-1. typegraphql
+1. **typegraphql**
    - decorator: used to apply authentication and authorization on resolvers (graphlq api).
    - middleware: used to catch all errors and make adjustment if needed like changing a message to the user to be more friendly or make silent logs
    - resolvers: this is like the graphlq api that allows client to communicate with backend
    - service: piece of code that can be injected in some clases. This example includes a logger class that print logs in a custom way
-2. graphql: most of the job is done by typegraphql by creating all CRUD resolvers and queries. Suscription and business logic code has been created following typegraphql examples
-3. prisma: this is our ORM for database communication
+2. **graphql**: most of the job is done by typegraphql by creating all CRUD resolvers and queries. Suscription and business logic code has been created following typegraphql examples
+3. **prisma**: this is our ORM for database communication
    - seed: there is a script that uses `PrismaClient` to perform database queries. We have created arrays and objects with relations between them and then this script is in charge of reading them and apply all connections between those objects.
    - postgresql: in some cases prisma won't allow us to do complex `postgresql` query so we apply them manually with prisma by sendimg the `postgresql` query directly to prisma
    - schema.prisma: this is the file that contains all the relations between models and also includes some `enums` like `ROLE` and `STATUS`
-4. apollo-server: we use apollo to manage graphlq server and suscription with websocket
-5. mailer: we use sendgrid for production and nodemailer for development
-6. cron job: some features allow admin stores to create some publications. Those publications has an expire time so we created a cron job that delete expired publications every day
-7. jwt: we use jwt to identify an authenticated user
+4. **apollo-server**: we use apollo to manage graphlq server and suscription with websocket
+5. **mailer**: we use sendgrid for production and nodemailer for development
+6. **cron job**: some features allow admin stores to create some publications. Those publications has an expire time so we created a cron job that delete expired publications every day
+7. **jwt**: we use jwt to identify an authenticated user
    - cookies & header: we choose to work with cookies on production but for development purposes there is change a new member won't have access to all projects. So if they start with frontend then he will use other method to transmit `jwt` between local frontend and hosted backend that involves cookies, headers and CORS plugin
 
 ## Repositories

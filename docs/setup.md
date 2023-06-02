@@ -106,7 +106,7 @@ NEXT_PUBLIC_WS_ENDPOINT='wss://api.test.dondelobusco.com'
      prisma db push or yarn run prisma db push
    ```
 
-   > `prisma migrate or prisma db push` says database name will be created if not found but its not true so you must create the database (7.a)
+   > `prisma migrate or prisma db push` says database name will be created if not found but its not true so you must create the database (7.1)
 
    3. seed data with
 
