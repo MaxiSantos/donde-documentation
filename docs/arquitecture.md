@@ -61,6 +61,10 @@ The project is divided in 5 github repositories.
 
   https://github.com/MaxiSantos/donde-backend-p2-typegraphql
 
+- Sahred: it contains code to be used between backend and frontend
+
+  https://github.com/MaxiSantos/donde-shared
+
 - Documentation
 
   https://github.com/MaxiSantos/donde-documentation
