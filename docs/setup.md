@@ -56,7 +56,7 @@ If you **DONT HAVE ACCESS TO BACKEND** then you will need to install CORS extens
 
 ```
 NEXT_PUBLIC_TOKEN_PAYLOAD_STRATEGY=header
-NEXT_PUBLIC_ENDPOINT='https://api.test.dondelobusco.com'
+NEXT_PUBLIC_API_ENDPOINT='https://api.test.dondelobusco.com'
 NEXT_PUBLIC_WS_ENDPOINT='wss://api.test.dondelobusco.com'
 ```
 
