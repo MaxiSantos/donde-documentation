@@ -30,19 +30,20 @@ Port 443
 
 You will need to do this in both user and admin repositories
 
-1. clone common, documentation, user and admin repository
+1. clone common, shared, documentation, user and admin repository
 2. switch to `development` branches in each repo and create a custom branch for you.
-3. go to root project folder (user and admin) and create symlink to public folder and docs
+3. go to root project folder (user and admin) and create symlink to public folder and docs.
 
 ```bash
   mklink /D public ..\donde-frontend-common\public
   mklink /D docs ..\donde-documentation\docs
 ```
 
-4. go to app folder (user and admin) and create symlink to common folder
+4. go to app folder (user and admin) and create symlink to common and shared folder
 
 ```bash
   mklink /D common ..\..\donde-frontend-common\common
+  mklink /D shared ..\..\donde-shared\shared
 ```
 
 > `mklink` only works in symbol of system (not powershell nor gitbash)
@@ -55,7 +56,7 @@ If you **DONT HAVE ACCESS TO BACKEND** then you will need to install CORS extens
 
 ```
 NEXT_PUBLIC_TOKEN_PAYLOAD_STRATEGY=header
-NEXT_PUBLIC_ENDPOINT='https://api.test.dondelobusco.com'
+NEXT_PUBLIC_API_ENDPOINT='https://api.test.dondelobusco.com'
 NEXT_PUBLIC_WS_ENDPOINT='wss://api.test.dondelobusco.com'
 ```
 

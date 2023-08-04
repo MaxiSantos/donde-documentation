@@ -27,7 +27,7 @@
       - layout: here we define the layouts to be used. Basically user will use default layout (header, container and footer) and admin will use sidebarLayout (same as default but with sidebar manu for dashboard navigation)
     - scripts: some script like bumping version
     - styles: setting up mui theme and some other css styles like normalization.css
-    - constants: TODO: this should be in other repo to be shared among frontend (user and admin) and backend.. it contains some contants variables and types
+    - constants: TODO: this should be in shared repo.. it contains some contants variables and types
 
 - pages: nextjs pages using `layout` and `pageTemplate` plus related code to backend like `getStaticProps`.
 

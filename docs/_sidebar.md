@@ -4,3 +4,4 @@
   - [Requirements](requirements.md)
   - [Setup](setup.md)
   - [Project Folder](folder.md)
+  - [References](references.md)

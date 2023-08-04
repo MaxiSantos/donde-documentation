@@ -29,7 +29,9 @@
 
 > check for versions in package.json
 
-- node (**prefered** to install it with nvm) v14.21.x
+- node (**prefered** to install it with nvm-windows or just nvm) v18.16.0
+- npm (https://chat.openai.com/share/905efa5d-ca90-4db7-ae72-f965ca7018de): 9.5.1
+  `npm install -g npm@latest` npm and node version https://nodejs.org/en/download/releases
 - yarn v1.22.19
 - postgres: if working with backend then go to https://www.postgresql.org/download/ v12.15.1
 - docsify (https://github.com/docsifyjs/docsify-cli
