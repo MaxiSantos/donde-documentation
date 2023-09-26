@@ -9,3 +9,10 @@
 - [vertical aligment] https://blog.logrocket.com/15-ways-implement-vertical-alignment-css/
 
 ## Backend
+
+## Tools
+
+### Terminal
+
+Customization of terminal
+https://www.youtube.com/watch?v=6SGIFVJ5Izs
